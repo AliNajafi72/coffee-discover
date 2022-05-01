@@ -1,0 +1,39 @@
+.container {
+
+}
+
+.description {
+    color: var(--text-white);
+    font: 700;
+    font-size: 1.5em;
+}
+
+.title1 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: var(--text-white);
+}
+
+.title2 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: var(--text-purple);
+}
+
+.button {
+    padding: 20px 40px;
+    border: none;
+    background-color: var(--text-purple);
+    color: var(--text-white);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .title1 {
+        font-size: 1.5em;
+    }
+    
+    .title2 {
+        font-size: 1.5em;
+    }
+}

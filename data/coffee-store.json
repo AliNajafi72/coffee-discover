@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "کافه آگور",
+        "imageUrl": "/static/img/cafe-agor.jpg"
+    },
+    {
+        "id": 1,
+        "name": "کافه دوکاتی",
+        "imageUrl": "/static/img/cafe-ducati.jpg"
+    },
+    {
+        "id": 2,
+        "name": "کافه نزدیک کتاب",
+        "imageUrl": "/static/img/cafe-nazdike-ketab.jpg"
+    },
+    {
+        "id": 3,
+        "name": "کافه باکارا",
+        "imageUrl": "/static/img/cafe-baraka.jpg"
+    }
+]

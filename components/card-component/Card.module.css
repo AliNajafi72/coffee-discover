@@ -1,0 +1,19 @@
+.cardLink {
+    text-decoration: none;
+    color: var(--text-purple);
+    padding: 0;
+}
+
+.cardWrapper {
+    padding: 20px;
+}
+
+.cardImage {
+    border-radius: 20px;
+}
+
+.cardTitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
