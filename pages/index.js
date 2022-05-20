@@ -9,18 +9,24 @@ import Card from '../components/card-component/card';
 // Static files here
 import styles from '../styles/Home.module.css';
 
-// Data files here
-import data from '../data/coffee-store.json';
-
 export async function getStaticProps(context) {
+  const response = await fetch("https://api.neshan.org/v1/search?term=%DA%A9%D8%A7%D9%81%DB%8C%D8%B4%D8%A7%D9%BE&lat=38.061691&lng=46.266077", {
+    "method": "GET",
+    "headers": {
+      "user-agent": "vscode-restclient",
+      "api-key": "service.Dg6NkD6DNwr4N5zAnxlH0AMsum5yVsU8LYUwLV7e"
+    }
+  })
+  const jsonData = await response.json();
+  const coffeeStores = jsonData.items;
   return {
     props: {
-      data,
+      coffeeStores,
     },
   }
 }
 
-export default function Home({ data }) {
+export default function Home({ coffeeStores }) {
   const handleOnBannerBtnCLick = () => {
     console.log("Hey button clicked!");
   }
@@ -42,11 +48,11 @@ export default function Home({ data }) {
             <Image src="/static/img/coffee-man.png" width={300} height={471} />
           </div>
         </div>
-        {data.length > 0 && 
+        {coffeeStores.length > 0 && 
           <>
             <h2 className={styles.coffeeShopListTitle}>کافی شاپ های تهران</h2>
             <div className={styles.wholeCardsContainer}>
-              {data.map(store => {
+              {coffeeStores.map(store => {
                 return <Card {...store} key={store.id}/>
               })}
             </div>

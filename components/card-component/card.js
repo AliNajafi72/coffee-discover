@@ -11,7 +11,7 @@ export default function Card({id, name, imageUrl}) {
                     <div className="cardContainer">
                         <h2 className={styles.cardTitle}>{name}</h2>
                         <Image
-                            src={imageUrl}
+                            src={imageUrl || "/static/img/cafe-baraka.jpg"}
                             alt={name}
                             className={styles.cardImage}
                             width={800}
