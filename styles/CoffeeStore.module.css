@@ -1,0 +1,104 @@
+.container {
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.backToHomeText {
+    color: var(--text-purple);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+}
+
+.backToHomeTextContainer {
+    padding-right: 10px;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.coffeeStoreImage {
+    border-radius: 10px;
+}
+
+.coffeeStoreName {
+    color: var(--text-semi-white);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.voteContainer, .addressContainer {
+    color: var(--text-purple);
+    font-weight: 700;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glassyContainer {
+    color: white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.detailText {
+    padding-right: 0;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    padding: 20px 40px;
+    border: none;
+    background-color: var(--text-purple);
+    color: var(--text-white);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .mainContainer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 30px;
+    }
+
+    .voteContainer, .addressContainer {
+        color: var(--text-purple);
+        font-weight: 700;
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .detailText {
+        padding-right: 20px;
+        text-align: right;
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: right;
+    }
+  }

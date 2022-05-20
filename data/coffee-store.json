@@ -2,21 +2,29 @@
     {
         "id": 0,
         "name": "کافه آگور",
-        "imageUrl": "/static/img/cafe-agor.jpg"
+        "imageUrl": "/static/img/cafe-agor.jpg",
+        "address": "خیابان انقلاب، بین خیابان نجات الهی و میدان فردوسی، نبش براتی،پلاک ۸۱۴",
+        "vote": 1
     },
     {
         "id": 1,
         "name": "کافه دوکاتی",
-        "imageUrl": "/static/img/cafe-ducati.jpg"
+        "imageUrl": "/static/img/cafe-ducati.jpg",
+        "address": "تهران، بام لند",
+        "vote": 2
     },
     {
         "id": 2,
         "name": "کافه نزدیک کتاب",
-        "imageUrl": "/static/img/cafe-nazdike-ketab.jpg"
+        "imageUrl": "/static/img/cafe-nazdike-ketab.jpg",
+        "address": "خیابان کریم‌خان زند، بین ایرانشهر و ماهشهر، شماره‌ ۱۳۴، طبقه‌ اول",
+        "vote": 3
     },
     {
         "id": 3,
         "name": "کافه باکارا",
-        "imageUrl": "/static/img/cafe-baraka.jpg"
+        "imageUrl": "/static/img/cafe-baraka.jpg",
+        "address": "میدان انقلاب، خیابان کارگر شمالی، خیابان رهنما",
+        "vote": 4
     }
 ]
