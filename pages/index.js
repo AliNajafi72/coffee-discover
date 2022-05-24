@@ -10,11 +10,18 @@ import Card from '../components/card-component/card';
 import styles from '../styles/Home.module.css';
 
 export async function getStaticProps(context) {
-  const response = await fetch("https://api.neshan.org/v1/search?term=%DA%A9%D8%A7%D9%81%DB%8C%D8%B4%D8%A7%D9%BE&lat=38.061691&lng=46.266077", {
+  const response = await fetch("https://map.ir/search/v2", {
     "method": "GET",
     "headers": {
       "user-agent": "vscode-restclient",
-      "api-key": "service.Dg6NkD6DNwr4N5zAnxlH0AMsum5yVsU8LYUwLV7e"
+      "content-type": "application/json",
+      "x-api-key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQzOGQ5MWYxNzgwZWY3MmU2ODFlZjgyN2QzYjY2OWQxMTgxZGI5ZWZjMzlhYzU0M2IyOTMxYzEzMDEwMGUzZmI1MThiZWQ0YTdmYjQzM2Q0In0.eyJhdWQiOiIxODA2MCIsImp0aSI6ImQzOGQ5MWYxNzgwZWY3MmU2ODFlZjgyN2QzYjY2OWQxMTgxZGI5ZWZjMzlhYzU0M2IyOTMxYzEzMDEwMGUzZmI1MThiZWQ0YTdmYjQzM2Q0IiwiaWF0IjoxNjUzMzg2Nzk4LCJuYmYiOjE2NTMzODY3OTgsImV4cCI6MTY1NTk3ODc5OCwic3ViIjoiIiwic2NvcGVzIjpbImJhc2ljIl19.CRa6je-XMxXUrXqKYCrMV8mNrbgjVMnBOQ2R0znbRFEMPtCjNpFyVrVORQT9P6H97Y-PITk3w7rkjd03zLXcW4U5KY7Km4sDIwhCbIOSkhdjUtXGA7Pckk88YtYfECKIPL2VSZxeVIWhxR5ju7lhpzHlXJPNYBxEokt-TnWTzTqZaI90CD7UbT1RtHy4DjLv03idq8811BgdKwnrUIMmMe_ZfqdgIcMqpehSHUCpcu9km357z_did1q3BmZrJcBtr4Hb3UbfGl9j43PWZ_ETwakfJ7W1U_nD4euLE078T0KVuFqLJnlTZPD6GZ43K3yfyUTaRyRLion0Te9nUYYDfA"
+    },
+    "body": {
+      "text": "کافی شاپ",
+      "": "city eq تبریز",
+      "lat": 38.061691,
+      "lon": 46.266077
     }
   })
   const jsonData = await response.json();
